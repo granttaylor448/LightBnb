@@ -132,7 +132,6 @@ const getAllProperties = function(options, limit = 10) {
       queryParams.push(`%${options.city}%`);
       queryString += `WHERE city LIKE $${queryParams.length}`;
     }
-  
     // 4
     
     if (options.minimum_price_per_night) {
